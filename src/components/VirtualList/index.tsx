@@ -58,7 +58,7 @@ export const VirtualList = <Item extends {}>({
 
   return (
     <Wrapper ref={wrapperRef} onScroll={onWrapperScroll}>
-      <Scroller height={breaks.at(-1) || 0}>
+      <Scroller height={breaks[breaks.length - 1] || 0}>
         <Content
           style={{
             transform: `translateY(${
